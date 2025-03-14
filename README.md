@@ -1,4 +1,4 @@
-# The Convergence Arrow - Information Convergence and Entropy Growth Simulations
+# The Convergence Arrow -  Simulations
 
 [https://colab.research.google.com/drive/1xOmIKo9cuJDoFJLY-9nZ54Ek-yeC3g6m?usp=sharing
 ](https://colab.research.google.com/drive/1wm934-I3Jq-yvZpMtjmtY_c3GL6f4eSN?usp=sharing)
