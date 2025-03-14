@@ -1,4 +1,4 @@
-# BlackHoleInformationLossModel_PrecisionFit
+# --- Black Hole Information Loss Model - Precision Fit ---
 
 import numpy as np
 import matplotlib.pyplot as plt
@@ -18,7 +18,9 @@ def S_BH(t, S0, lambda_c, rho_T):
     Returns:
     - S_BH: Black hole entropy as a function of time
     """
-    return S0 * (1 - np.exp(-lambda_c * rho_T * t))
+    exponent = -lambda_c * rho_T * t
+    exponent = np.clip(exponent, -700, 700)  #overflow
+    return S0 * (1 - np.exp(exponent))
 
 # --- Generate Simulated Data ---
 t_data = np.linspace(0, 10, 50)  # Time range
@@ -54,3 +56,4 @@ plt.show()
 
 # --- Display Best-Fit Parameters ---
 S0_fit, lambda_c_fit, rho_T_fit
+
